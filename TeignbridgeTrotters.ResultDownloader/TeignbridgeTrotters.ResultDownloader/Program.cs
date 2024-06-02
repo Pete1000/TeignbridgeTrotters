@@ -16,6 +16,6 @@ while (1 == 1)
         await response.CopyToAsync(outputFileStream);
     }
     
-    Console.WriteLine($"{DateTime.Now:T} - Downloaded file. Waiting for {programSettings.WaitTimeSeconds} seconds");
+    Console.WriteLine($"{DateTime.Now:T} - Downloaded {programSettings.SourceFileName} to {programSettings.DestinationFileName}. Waiting for {programSettings.WaitTimeSeconds} seconds");
     Thread.Sleep(programSettings.WaitTimeSeconds * 1000);
 };
